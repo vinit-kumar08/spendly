@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .terms-wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px 64px;
+    }
+
+    .terms-wrap h1 {
+        font-family: "DM Serif Display", serif;
+        font-size: 2.2rem;
+        margin-bottom: 4px;
+    }
+
+    .terms-wrap .last-updated {
+        opacity: 0.6;
+        font-size: 0.85rem;
+        margin-bottom: 32px;
+    }
+
+    .terms-wrap section {
+        margin-bottom: 28px;
+    }
+
+    .terms-wrap h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .terms-wrap p,
+    .terms-wrap li {
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.6;
+    }
+
+    .terms-wrap ul {
+        padding-left: 20px;
+        margin: 0 0 12px;
+    }
+
+    .terms-wrap .back-link {
+        display: inline-block;
+        margin-top: 16px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.9rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="terms-wrap">
+    <h1>Terms and Conditions</h1>
+    <p class="last-updated">Last updated: July 2026</p>
+
+    <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By creating an account or otherwise using Spendly, you agree to be bound by these
+            Terms and Conditions. If you do not agree with any part of these terms, please do
+            not use the service. We may update these terms from time to time, and continued
+            use of Spendly after changes take effect constitutes your acceptance of the revised
+            terms.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Use of Service</h2>
+        <p>
+            Spendly is a personal expense tracking application intended to help you record,
+            organize, and review your own spending. You agree to use the service only for
+            lawful purposes and in a way that does not infringe on the rights of, or restrict
+            or inhibit the use and enjoyment of the service by, anyone else.
+        </p>
+        <p>You are responsible for:</p>
+        <ul>
+            <li>Maintaining the confidentiality of your account credentials</li>
+            <li>All activity that occurs under your account</li>
+            <li>Ensuring the accuracy of the financial data you choose to enter</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. User Data</h2>
+        <p>
+            Spendly stores the expense and account information you provide in order to deliver
+            the service to you. We do not sell your personal data to third parties. Your data
+            is used solely to operate, maintain, and improve the app's core features, such as
+            tracking, categorizing, and summarizing your expenses.
+        </p>
+        <p>
+            You may request the deletion of your account and associated data at any time,
+            subject to any legal or technical limitations on immediate removal.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Limitations of Liability</h2>
+        <p>
+            Spendly is provided on an "as is" and "as available" basis, without warranties of
+            any kind, express or implied. We do not guarantee that the service will be
+            uninterrupted, error-free, or free of loss. Spendly is a personal budgeting tool
+            and should not be relied upon as financial, tax, or investment advice.
+        </p>
+        <p>
+            To the fullest extent permitted by law, Spendly and its creators shall not be
+            liable for any indirect, incidental, or consequential damages, including loss of
+            data or financial loss, arising from your use of the service.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Changes to Terms</h2>
+        <p>
+            We may revise these Terms and Conditions periodically to reflect changes in our
+            practices or for other operational, legal, or regulatory reasons. When we make
+            material changes, we will update the "Last updated" date above. We encourage you
+            to review this page occasionally to stay informed of any updates.
+        </p>
+    </section>
+
+    <a class="back-link" href="{{ url_for('landing') }}">&larr; Back to Spendly</a>
+</div>
+{% endblock %}
